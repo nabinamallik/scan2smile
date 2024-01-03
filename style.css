@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(214, 52, 255);
+  }
+  .inp{
+    display: block;
+  }
+  button{
+    background: rgb(42, 166, 255);
+    color: white;
+    border: transparent;
+    border-radius: 20px;
+  }
+  input, button {
+    padding: 8px;
+    font-size: 16px;
+  }
+  #imageContainer {
+    position: relative;
+    display: none;
+    height: auto;
+    margin-top: 20px;
+  }
+  #outputImage {
+    max-width: 100%;
+    height: fit-content;
+  }
+  #nameOverlay {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bad Script', cursive;
+    text-transform: capitalize;
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    #outputImage{
+        height: fit-content;
+    }
+    h1 {
+        font-size: 30px; /* Adjust as needed */
+      }
+      input, button {
+        font-size: 14px; /* Adjust as needed */
+      }
+    #nameOverlay {
+      font-size: 18px;
+    }
+  }
